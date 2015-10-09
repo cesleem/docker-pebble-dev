@@ -6,7 +6,10 @@ MAINTAINER André Dumas
 RUN apt-get update && apt-get install -y \
     curl \
     python2.7-dev \
-    python-pip
+    python-pip \
+    freetype*
+
+RUN pip install --user freetype-py==1.0 
 
 ENV PEBBLE_VERSION PebbleSDK-3.6-dp6
 ENV PEBBLE_HOME /opt/$PEBBLE_VERSION
