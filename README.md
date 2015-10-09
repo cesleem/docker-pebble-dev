@@ -1,3 +1,16 @@
+
+
+###*Updated to work with SDK3.6dp6*
+
+#QUICKSTART COMMAND
+
+```
+docker run -v <root/dir/of/my/project>:/pebble  -e PEBBLE_PHONE=<IP ADDRESS> docker-pebble-dev <pebble command arguments>
+```
+
+
+*Special Thanks to Andres Dumas | Forked from andredumas/pebble-dev |  His notes below: *
+
 # Supported tags and respective `Dockerfile` links
 
 * [`2.8.1` (*2.8.1/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/2.8.1/Dockerfile)
@@ -20,7 +33,7 @@ http://developer.getpebble.com/sdk/
 # How to use this image
 
 ```
-docker pull andredumas/pebble-dev
+docker pull cesleem/pebble-dev
 ```
 
 Standard usage, assuming you are running from the root of your project, is to use it to execute pebble commands:
